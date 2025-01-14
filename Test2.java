@@ -13,7 +13,9 @@ public class HomepageNavigationSteps {
         driver.get("https://www.brighthorizons.com/");
     }
     public void clickSearchIcon() {
-        WebElement searchHeader = driver.findElement(By.xpath//nav[@class='nav-shared txt-nav-hierarchy nav-top js-nav-shared js-nav-top']//ul[@class='nav-list-wrap']//li[@class='nav-item displayed-desktop']//a[@class='btn-nav btn btn-large btn-hollow color-nileblue global_header_findcenter track_cta_click'][contains(text(),'Find a Center')].click();
+        WebElement searchHeader = driver.findElement(By.xpath//nav[@class='nav-shared txt-nav-hierarchy nav-top js-nav-shared js-nav-top']
+                                                     //ul[@class='nav-list-wrap']//li[@class='nav-item displayed-desktop']
+                                                     //a[@class='btn-nav btn btn-large btn-hollow color-nileblue global_header_findcenter track_cta_click'][contains(text(),'Find a Center')].click();
 
         String currentURL = driver.getCurrentUrl();
         currentURL.contains(expectedText_1);
