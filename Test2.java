@@ -33,6 +33,7 @@ public class HomepageNavigationSteps {
         assertEquals(resultText, resultNme);
 
     }
+    driver.quit();
 }
 
 
